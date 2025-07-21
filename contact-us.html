@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EduUpMe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e40af',
+                        'dark-blue': '#1e3a8a',
+                        'light-blue': '#3b82f6',
+                        'orange': '#f97316',
+                        'cyan': '#06b6d4'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-blue-900 via-purple-900 to-blue-800 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-cyan to-blue-500 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">eduUpme</span>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">Course Categories</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">Search</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">Digital Classroom</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition">Start Teaching</a>
+                </div>
+                
+                <!-- User Profile -->
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <i class="fas fa-bell text-gray-600"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 rounded-full">
+                        <img src="https://via.placeholder.com/32x32" alt="Profile" class="w-8 h-8 rounded-full">
+                        <span class="text-sm">Vishal Gadhiya</span>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-600"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <div class="flex flex-col lg:flex-row items-center mb-16">
+            <!-- Left Content -->
+            <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+                    Get In <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan to-orange">Touch</span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    Please submit the form below for queries or suggestions. We will respond to your message as soon as possible.
+                </p>
+                
+                <!-- Contact Info Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-gradient-to-r from-cyan to-blue-500 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <h3 class="text-white font-semibold">Email Us</h3>
+                        </div>
+                        <p class="text-gray-300 text-sm">contact@eduupme.com</p>
+                        <p class="text-gray-300 text-sm">support@eduupme.com</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-gradient-to-r from-orange to-red-500 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <h3 class="text-white font-semibold">Call Us</h3>
+                        </div>
+                        <p class="text-gray-300 text-sm">+1 (555) 123-4567</p>
+                        <p class="text-gray-300 text-sm">+1 (555) 987-6543</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <h3 class="text-white font-semibold">Visit Us</h3>
+                        </div>
+                        <p class="text-gray-300 text-sm">123 Education Street</p>
+                        <p class="text-gray-300 text-sm">Learning City, LC 12345</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <h3 class="text-white font-semibold">Working Hours</h3>
+                        </div>
+                        <p class="text-gray-300 text-sm">Mon - Fri: 9:00 - 18:00</p>
+                        <p class="text-gray-300 text-sm">Sat - Sun: 10:00 - 16:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Content - Contact Form -->
+            <div class="lg:w-1/2">
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-2xl">
+                    <form class="space-y-6">
+                        <!-- Subject and Contact Name Row -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-white mb-2">Subject Name</label>
+                                <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" 
+                                       class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan focus:border-transparent transition">
+                            </div>
+                            <div>
+                                <label for="contact-name" class="block text-sm font-medium text-white mb-2">Contact Name</label>
+                                <input type="text" id="contact-name" name="contact-name" placeholder="Enter Contact Name" 
+                                       class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan focus:border-transparent transition">
+                            </div>
+                        </div>
+                        
+                        <!-- Email and Mobile Row -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-white mb-2">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter Email Address" 
+                                       class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan focus:border-transparent transition">
+                            </div>
+                            <div>
+                                <label for="mobile" class="block text-sm font-medium text-white mb-2">Mobile Number</label>
+                                <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" 
+                                       class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan focus:border-transparent transition">
+                            </div>
+                        </div>
+                        
+                        <!-- How did you hear about us -->
+                        <div>
+                            <label class="block text-sm font-medium text-white mb-3">How did you hear about us?</label>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-cyan bg-white/20 border-white/30 rounded focus:ring-cyan">
+                                    <span class="text-sm text-gray-300">Social Media</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-cyan bg-white/20 border-white/30 rounded focus:ring-cyan">
+                                    <span class="text-sm text-gray-300">LinkedIn</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-cyan bg-white/20 border-white/30 rounded focus:ring-cyan">
+                                    <span class="text-sm text-gray-300">Search Engine</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-cyan bg-white/20 border-white/30 rounded focus:ring-cyan">
+                                    <span class="text-sm text-gray-300">Word of Mouth</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-cyan bg-white/20 border-white/30 rounded focus:ring-cyan">
+                                    <span class="text-sm text-gray-300">Recommended</span>
+                                </label>
+                                <label class="flex items-center space-x-2 cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4 text-cyan bg-white/20 border-white/30 rounded focus:ring-cyan">
+                                    <span class="text-sm text-gray-300">Blogs</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-white mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Enter message" 
+                                      class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan focus:border-transparent transition resize-none"></textarea>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-orange to-red-500 text-white font-semibold py-4 px-6 rounded-lg hover:from-orange/90 hover:to-red-500/90 focus:outline-none focus:ring-2 focus:ring-orange focus:ring-offset-2 focus:ring-offset-transparent transition transform hover:scale-105">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Map Section -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/20 mb-16">
+            <div class="p-8">
+                <h2 class="text-2xl font-bold text-white mb-4">Find Us on Map</h2>
+                <p class="text-gray-300 mb-6">Visit our office for in-person consultations and support.</p>
+            </div>
+            <div class="h-96 bg-gray-300 relative">
+                <!-- This would be replaced with an actual map integration -->
+                <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+                    <div class="text-center text-white">
+                        <i class="fas fa-map-marked-alt text-4xl mb-4"></i>
+                        <p class="text-lg">Interactive Map</p>
+                        <p class="text-sm opacity-75">Integrate with Google Maps or similar service</p>
+                    </div>
+                </div>
+                <!-- Map marker -->
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white shadow-lg">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 mb-16">
+            <h2 class="text-3xl font-bold text-white text-center mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4 max-w-4xl mx-auto">
+                <div class="bg-white/5 rounded-lg border border-white/10">
+                    <button class="w-full text-left p-6 focus:outline-none">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-white">How quickly do you respond to inquiries?</h3>
+                            <i class="fas fa-chevron-down text-white"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-gray-300">We typically respond to all inquiries within 24 hours during business days.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/5 rounded-lg border border-white/10">
+                    <button class="w-full text-left p-6 focus:outline-none">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-white">Do you offer technical support?</h3>
+                            <i class="fas fa-chevron-down text-white"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-gray-300">Yes, we provide comprehensive technical support for all our educational platforms and courses.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/5 rounded-lg border border-white/10">
+                    <button class="w-full text-left p-6 focus:outline-none">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-white">Can I schedule a demo?</h3>
+                            <i class="fas fa-chevron-down text-white"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-gray-300">Absolutely! Contact us to schedule a personalized demo of our platform and courses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cyan text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-cyan text-sm"></i>
+                        </div>
+                        <span class="text-xl font-bold">eduUpme</span>
+                    </div>
+                    <p class="text-cyan-100 text-sm mb-4">Empowering education through innovative learning solutions and comprehensive course offerings.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-cyan-100 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-cyan-100 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-cyan-100 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-cyan-100 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-cyan-100 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-cyan-100 hover:text-white transition text-sm">Digital Classroom</a></li>
+                        <li><a href="#" class="text-cyan-100 hover:text-white transition text-sm">Start Teaching</a></li>
+                        <li><a href="#" class="text-cyan-100 hover:text-white transition text-sm">About us</a></li>
+                        <li><a href="#" class="text-cyan-100 hover:text-white transition text-sm">Contact us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-cyan-100 hover:text-white transition text-sm">Terms</a></li>
+                        <li><a href="#" class="text-cyan-100 hover:text-white transition text-sm">Privacy Policy</a></li>
+                        <li><a href="#" class="text-cyan-100 hover:text-white transition text-sm">Disclaimer</a></li>
+                        <li><a href="#" class="text-cyan-100 hover:text-white transition text-sm">Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Subscribe</h3>
+                    <p class="text-cyan-100 text-sm mb-4">Stay updated with our latest courses and insights.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Enter your email id" 
+                               class="flex-1 px-4 py-2 bg-white/20 border border-white/30 rounded-l-lg text-white placeholder-cyan-100 focus:outline-none focus:ring-2 focus:ring-white/50">
+                        <button class="bg-white text-cyan px-4 py-2 rounded-r-lg hover:bg-gray-100 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <p class="text-cyan-100 text-sm mb-2">Available Now</p>
+                        <div class="flex space-x-2">
+                            <a href="#" class="inline-block">
+                                <img src="https://via.placeholder.com/120x40/000000/FFFFFF?text=Google+Play" alt="Google Play" class="h-10 rounded">
+                            </a>
+                            <a href="#" class="inline-block">
+                                <img src="https://via.placeholder.com/120x40/000000/FFFFFF?text=App+Store" alt="App Store" class="h-10 rounded">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-cyan-400 mt-8 pt-8 text-center">
+                <p class="text-cyan-100 text-sm">Copyright 2021 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for interactive elements -->
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (content && content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else if (content) {
+                    content.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
